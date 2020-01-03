@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "752013910645",
+    "firebase_url": "https://appopr-f866f.firebaseio.com",
+    "project_id": "appopr-f866f",
+    "storage_bucket": "appopr-f866f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752013910645:android:91b0552b6e346ed1",
+        "android_client_info": {
+          "package_name": "com.skripsi.marisonervan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752013910645-om5afa4lcmath510un3s3r6fkfi76v7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkZXJdtwyiG8cfux80kVgDVN4F2F1NmZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

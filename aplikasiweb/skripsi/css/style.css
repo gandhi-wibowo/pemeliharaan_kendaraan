@@ -1,0 +1,568 @@
+/* global style #D8221C ba1c1a*/
+html, body{
+		padding:0;
+		margin:0;
+}
+
+body{
+	font-size:9pt;
+	background-color:#f8f8f8;
+	color:#333;
+	font-family: arial;
+	font-size: 14px;
+}
+
+input[type=text], input[type=password],  select, textarea{
+	padding:6px;
+	border:1px solid #ccc;
+}
+
+input[type=submit], input[type=reset]{
+	padding:6px 14px;
+}
+
+input[type=reset]{
+	background-color:#ba1c1a;
+	border:1px solid #000;
+	padding:5px 30px;
+	font-size: 14px;
+	color:#fff;
+	cursor:pointer;
+}
+
+input[type=reset]:hover{
+	background-color:#D8221C;
+}
+
+input[type=submit]{
+	background-color:#6cc61d;
+	border:1px solid #333;
+	color:#f9f9f9;
+	padding:6px 30px;
+	font-size: 13px;
+	cursor:pointer;
+	border-radius:2px;
+	font-weight: bold;
+}
+
+input[type=submit]:hover{
+	background-color:#7cdb23;
+}
+
+.asterisk{
+	color:red;
+	font-size:14px;
+	padding-right:5px;
+}
+
+.breadcrumb{
+	font-size:11px;
+	background-color:#f7f7f7;
+	padding:10px 15px;
+	margin:-20px -20px 0 -20px;
+	border-bottom:1px solid #ddd
+}
+
+h4.content-title{
+	font-size:18px;
+	border-bottom:1px solid #ddd;
+	padding-bottom:7px;
+}
+
+#top-bar{
+	color:#eee;
+	background-color:#2b2e30;
+	padding:5px 15px;
+	font-size:12px;
+	overflow:hidden;
+}
+
+#top-bar #appname{
+	float:right;
+}
+
+#top-bar #appname b{
+	color:#00CCCC;
+}
+
+#top-bar #hello, #top-bar #date{
+	float:left;
+}
+
+#top-bar #date{
+	color:#ccc;
+	margin-left:10px;
+	font-size:10px;
+}
+
+#menu{
+	border-top:3px solid #0033CC;
+	border-bottom:2px solid #2F3D44;
+	background-color:#2F3D44;
+	color:#fff;
+	padding:0;
+	margin:0;
+	display:block;
+	width: 100%;
+}
+
+#menu li{
+	display:inline-block;
+	list-style-type:none;
+}
+
+#menu li:hover{
+	background-color:#555;
+}
+
+#menu li a{
+	color:#fff;
+	font-weight: bold;
+	text-decoration:none;
+	font-family:arial;
+	display:block;
+	padding:12px 20px;
+	border-right:1px solid #666;
+	font-size:12px;
+	position:relative
+}
+
+
+#menu li.active{
+	background-color:#0033CC;
+}
+
+#menu li .notif{
+	position:absolute;
+	bottom:-8px;
+	right:0;
+	background-color: #0033CC;
+	color:#fff;
+	padding:3px 7px;
+	border:1px solid #ff9221;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+}
+
+#wrapper{
+	background-image:url(../images/back_pattern.png);
+	padding:15px 10px;
+	overflow:hidden;
+}
+
+#wrapper p{
+	line-height:20px;
+} 
+
+#sidebar{
+	width:230px;
+	float:left;
+	background-color:#fff;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#sidebar h3{
+	padding:10px;
+	margin:0;
+	background-color:#2F3D44;
+	color:#fff;
+	font-size:12px;
+	text-align:center
+}
+
+#sidebar ul {
+	margin:0;
+	padding:0;
+}
+
+#sidebar ul li{
+	border:1px solid #ddd;
+	border-top:0;
+}
+
+#sidebar ul li a{
+	display:block;
+	color:#2F3D44;
+	padding:10px 10px;
+	text-decoration:none;
+	font-size:12px;
+	position:relative;
+}
+
+#sidebar ul li a:hover{
+	background-color:#f9f9f9;
+}
+
+#sidebar ul li a.active{
+	background-color:#f2f2f2;
+	color:#333;
+}
+
+#sidebar ul li span.count{
+	margin-left:5px;
+	background-color: #0033CC;
+	color:#fff;
+	padding:2px 5px;
+	border-radius:10px;
+	font-size:11px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+}
+
+#container{ 
+	padding:15px;
+	background:#fff url(../images/bg.jpg);
+	background-repeat: repeat-x;
+	border:1px solid #ddd;
+	border-top:2px solid #ccc;
+	overflow:hidden;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+#footer{
+	text-align:center;
+	background-color:#0C1624;
+	color:#fff;
+	font-size:14px;
+	padding:20px;
+	border-top:3px solid #0033CC
+}
+
+#footer-note{
+	text-align: center;
+	border-top:1px solid #666;
+	background-color:#2F3D44;
+	color:#eee;
+	padding:10px;
+	font-size:11px;
+}
+
+#footer-note b{
+	color:#00CCCC;
+}
+
+a{
+	color:#0033CC;
+}
+
+table.list{
+	border-collapse: collapse;
+	width:100%;
+	background-color:#fff;
+}
+
+table.list th{
+	background-color:#2F3D44;
+	color:#f2f2f2;
+	font-weight:bold;
+	border:1px solid #555;
+	font-size:12px;
+	padding:10px;
+}
+
+table.list td{
+	border:1px solid #ccc;
+	font-size:12px;
+	padding:7px 5px;
+}
+
+table.list td a.btn{
+	background-color:#0033CC;
+	color:#f8f8f8;
+	font-size:11px;
+	padding:3px 10px;
+	text-decoration:none;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	font-weight:bold;
+}
+
+table.list td a.btn:hover{
+	background-color:#D8221C;
+}
+
+table.list td.nodata{
+	text-align:center;
+	padding:25px;
+}
+
+table.list td.nodata:hover{
+	background-color:#fff;
+}
+
+table.list tr:hover{
+	background-color:#f7f7f7;
+}
+
+table.list form{
+	margin:0;
+	padding:0;
+}
+
+table.list button, table.list input[type=button], table.list input[type=submit]{
+	padding:5px 15px;
+	background-color:#2F3D44;
+	border:1px solid #666;
+	border-radius:2px;
+	color:#fff;
+	text-decoration:none;
+	font-size:11px;
+
+}
+
+table.list button:hover, table.list input[type=button]:hover, table.list input[type=submit]:hover{
+	background-color:#0033CC
+}
+
+table tr.history td, table tr.history td a{
+	color:#bbb;
+}
+
+table tr.history td a.btn{
+	background-color:#bbb;
+}
+
+table tr.history td a.btn:hover{
+	background-color:#ccc;
+}
+
+#title{
+	margin:0 0 15px 0;
+	padding:0 0 10px 0;
+	font-size:22px;
+	text-align:center;
+	border-bottom:1px dashed #bbb;
+}
+
+h2.content-title{
+	text-align:center;
+	margin:50px 0;
+	line-height:30px;
+}
+
+h2.content-title span{
+	border-bottom:1px solid #333;
+	padding-bottom:2px;
+}
+
+#search{
+	float:right;
+	overflow:hidden;
+}
+
+#search input[type=submit]{
+	background-color:#FF691E;
+}
+
+#search input[type=submit]:hover{
+	 background-color:#db5c1c;
+}
+
+#content-menu{
+	padding:0;
+	margin:15px 0 20px 0;
+	float:right;
+}
+
+#content-menu li{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#content-menu li a{
+	padding:9px 15px;
+	background-color:#2F3D44;
+	border:1px solid #666;
+	border-radius:3px;
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	font-weight: bold;
+}
+
+#content-menu li a:hover{
+	background-color:#6cc61d
+}
+
+#segment-container{
+	overflow:hidden;
+	margin-bottom:15px;
+}
+
+.segment{
+	width:49.4%;
+	float:left;
+	border:1px solid #ddd;
+	background-color:#fff;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+}
+
+.segment .content{
+	padding:10px;
+	height:140px;
+	overflow-y:auto;
+}
+
+.segment h3{
+	padding:10px;
+	margin:0;
+	background-color:#2F3D44;
+	color:#fff;
+	font-size:12px;
+	text-align:center
+}
+
+.segment .note{
+	font-style:italic;
+	font-size:12px;
+	color:#bbb;
+	margin:10px 0 20px 0;
+}
+
+.segment table{
+	border-collapse: collapse;
+}
+
+.segment table th, .segment table td{
+	font-size:12px;
+	border:1px solid #2F3D44;
+	padding:6px;
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	color:#666;
+}
+
+.segment table th{
+	border-bottom:2px solid #2F3D44;
+}
+
+/* qr list d tabel kendaraan*/
+.qrlist{
+    float:left;
+    border:1px solid #666;
+    padding:10px;
+	margin:0 25px 25px 0;
+	background-color:#fff;
+}
+
+.qrlist image{
+	display:block;
+}
+
+.qrlist .label span{
+	font-weight:bold;
+	text-align: center;
+	background-color:#000;
+	color:#fff;
+	padding:4px 8px;
+}
+
+/*fpk*/
+.history-block{
+	margin:10px 0 50px 0;
+	color:#666;
+	font-style: italic;
+	font-size:12px;
+}
+
+#info-fpk table{
+	width:100%;
+}
+
+#info-fpk table td{
+	font-size:13px;
+	color:#444;
+	padding-bottom:20px;
+}
+
+#info-fpk label{
+	font-weight: bold;
+	display:block;
+	padding-bottom:5px;
+	margin-bottom:8px;
+	color:#444;
+	border-bottom:1px solid #ccc;
+}
+
+/* datepicker */
+/* located in demo.css and creates a little calendar icon
+ * instead of a text link for "Choose date"
+ */
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(../images/calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+input.dp-applied {
+	width: 120px;
+	float: left;
+}
+
+/* custom pagination */
+.pagination{
+	padding:15px 0 !important;
+	text-align: center;
+}
+
+@media print{
+	body{
+		background-color: #fff !important;
+	}
+
+	 body > *:not(#print-area), #content-menu {
+ 		display:none;
+	 }
+
+	 #container{
+		 background-image: none;
+	 }
+
+	 .print-hide{
+ 		display:none;
+	 }
+
+	 #print-area, #wrapper{
+		display:block !important;
+	 }
+
+	 #wrapper, #container{
+ 		padding:0 !important;
+ 		margin: 0 !important;
+ 		background-color: #fff !important;
+ 		border:0 !important;
+	 }
+
+	 #sidebar{
+	 	display:none;
+	 }
+
+	 table td{
+	 		color:#000;
+	 }
+}

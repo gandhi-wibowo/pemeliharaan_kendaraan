@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skripsi.marisonervan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="OPR"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login" />
+        <activity
+            android:name=".lapangan.Fpk_lapangan"
+            android:label="FPK"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".manager.Fpk_manager"
+            android:label="FPK"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.skripsi.marisonervan.FPK_MANAGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Scan" />
+        <activity
+            android:name=".Detail"
+            android:label="Detail Kendaraan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Detail_fpk"
+            android:label="Detail FPK"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HistoryScan"
+            android:label="History Scan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".lapangan.History_lapangan"
+            android:label="History FPK"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.skripsi.marisonervan.HISTORY_LAPANGAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".manager.History_manager"
+            android:label="History FPK"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Ubah_password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Notification"
+            android:label="Notification"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.skripsi.marisonervan.TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationDetail"
+            android:label="Detail Notification"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:label="About OPR"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Profil"
+            android:label="Profil User"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Manual"
+            android:label="i-MANUAL"
+            android:parentActivityName=".MainActivity"
+            />
+    </application>
+
+</manifest>
